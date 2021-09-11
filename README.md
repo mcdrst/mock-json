@@ -96,15 +96,15 @@ json structure
 
 mock-json works with collections, each collection generates a Resource with below list endpoints.
 
-* **GET** - _/:nomeCollection_ Get all collection records
+* **GET** - _/:nameCollection_ Get all collection records
 
-* **GET** (id) - _/:nomeCollection/:id_ id must be an positive integer
+* **GET** (id) - _/:nameCollection/:id_ id must be an positive integer
 
 * **POST** - _/:nameColletcion_ Create a new colletiton record, if collection does not exist, a new colletion will be created with a new record
 
-* **PATCH** (id) - _/:nomeColletion/:id_ Update a record (there is no PUT, send all data to PATCH)
+* **PATCH** (id) - _/:nameColletion/:id_ Update a record (there is no PUT, send all data to PATCH)
 
-**DELETE** (id) - _/:nomeColletion/:id_ Deleta a record
+**DELETE** (id) - _/:nameColletion/:id_ Deleta a record
 
 ## URL query string
 
@@ -151,5 +151,5 @@ Response
 
 * json null values
 * sort, page and limit are reserved wordks, don't use then as keys in json file
-* don't try sort param if json file does not have the same key in all records (objects ofa a collection)
+* don't try sort param if json file does not have the same key in all records
 * many more...
