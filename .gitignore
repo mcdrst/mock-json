@@ -1,0 +1,10 @@
+.envrc
+bin/
+tmp/
+.DS_Store
+datafortest/
+*.out
+src/dbtest.json
+copydbjson/
+*.json
+./src/dbtest.json
