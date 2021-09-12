@@ -3,12 +3,12 @@
 
 Restfull api for json files - Inspired by [server-json](https://github.com/typicode/json-server.git)
 
-## Install
+## Install 
 
-clone repository
+Doownload repository
 
 ```bash
-$ make build
+$ make build (or "go build -o mock-json ./src")
 
 ==> Building mock-json...
 2021-09-10T02:33:47Z
@@ -18,7 +18,7 @@ go build -ldflags='-s -X main.buildTime="2021-09-10T02:33:47Z"" -X main.version=
 GOOS=linux GOARCH=amd64 go build -ldflags='-s -X main.buildTime="2021-09-10T02:33:47Z"" -X main.version=v.1.0.1-0-gdfe427a' -o=./bin/linux_amd64/mock-json ./src
 ```
 
-Binary wil be saved in ./bin/mock-json
+Binary wil be saved in ./bin/mock-json (make)
 
 ## Command line paramters
 
