@@ -149,7 +149,7 @@ Response
 
 ## limitations
 
-* json null values
-* sort, page and limit are reserved wordks, don't use then as keys in json file
+* json null, objects and arrays values
+* sort, page and limit are reserved words, don't use then as keys in json file
 * don't try sort param if json file does not have the same key in all records
 * many more...

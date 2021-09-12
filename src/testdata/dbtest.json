@@ -1,0 +1,33 @@
+{
+    "product": [
+        {
+            "id": 1,
+            "name": "burguer",
+            "price": 8.5,
+            "categoryId": 1
+        },
+        {
+            "id": 2,
+            "name": "burguer x",
+            "price": 10.5,
+            "categoryId": 2
+        }
+    ],
+    "category": [
+        {
+            "id": 1,
+            "name": "burguer",
+            "valid": true
+        },
+        {
+            "id": 2,
+            "name": "Water",
+            "valid": false
+        },
+        {
+            "id": 3,
+            "name": "cheese",
+            "valid": true
+        }
+    ]
+}

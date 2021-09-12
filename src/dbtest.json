@@ -1,0 +1,45 @@
+{
+	"category": [
+		{
+			"id": 1,
+			"name": "burguer",
+			"valid": true
+		},
+		{
+			"id": 2,
+			"name": "Water",
+			"valid": false
+		},
+		{
+			"id": 3,
+			"name": "cheese",
+			"valid": true
+		}
+	],
+	"newcollection": [
+		{
+			"id": 1,
+			"name": "name 1",
+			"price": 100.15
+		}
+	],
+	"product": [
+		{
+			"categoryId": 1,
+			"id": 1,
+			"name": "burguer",
+			"price": 8.5
+		},
+		{
+			"categoryId": 2,
+			"id": 2,
+			"name": "burguer x",
+			"price": 10.5
+		},
+		{
+			"id": 3,
+			"name": "name 1",
+			"price": 100.15
+		}
+	]
+}
