@@ -5,7 +5,7 @@ Restfull api for json files - Inspired by [server-json](https://github.com/typic
 
 ## Install 
 
-Doownload repository
+Download repository
 
 ```bash
 $ make build (or "go build -o mock-json ./src")
@@ -18,9 +18,9 @@ go build -ldflags='-s -X main.buildTime="2021-09-10T02:33:47Z"" -X main.version=
 GOOS=linux GOARCH=amd64 go build -ldflags='-s -X main.buildTime="2021-09-10T02:33:47Z"" -X main.version=v.1.0.1-0-gdfe427a' -o=./bin/linux_amd64/mock-json ./src
 ```
 
-Binary wil be saved in ./bin/mock-json (make)
+Binary will be saved in ./bin/mock-json (make)
 
-## Command line paramters
+## Command line parameters
 
 ```bash
 $ mock-json --version
@@ -88,7 +88,7 @@ json structure
 }
 ```
 
-"id" key is mandatory and must be an unique and positve integer (it is the primary index). API find the greater id and sum 1 to the next record that will be created.
+"id" key is mandatory and must be a unique and positve integer (it is the primary index). API find the greater id and sum 1 to the next record that will be created.
 
 "values" must be a number, string or a bool. Numbers are always float64
 
@@ -100,7 +100,7 @@ mock-json works with collections, each collection generates a Resource with belo
 
 * **GET** (id) - _/:nameCollection/:id_ id must be an positive integer
 
-* **POST** - _/:nameColletcion_ Create a new colletiton record, if collection does not exist, a new colletion will be created with a new record
+* **POST** - _/:nameColletcion_ Create a new collection record, if collection does not exist, a new collection will be created with a new record
 
 * **PATCH** (id) - _/:nameColletion/:id_ Update a record (there is no PUT, send all data to PATCH)
 
@@ -117,7 +117,7 @@ key must be a string
 
 **limit** _:/collectionName?limit=9_ Records per page
 
-**any key** _:/collectionName?key=value_ Return all records that have an equal pair (key, value). Value could be a number, string or bool, null values are unsuported yet, plesse always use zero values (0, "", or (true/false))
+**any key** _:/collectionName?key=value_ Return all records that have an equal pair (key, value). Value could be a number, string or bool, null values are unsupported yet, please always use zero values (0, "", or (true/false))
 
 ## Example
 
@@ -152,4 +152,4 @@ Response
 * json null, objects and arrays values
 * sort, page and limit are reserved words, don't use then as keys in json file
 * don't try sort param if json file does not have the same key in all records
-* many more...
+* there are more..

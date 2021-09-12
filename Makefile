@@ -13,7 +13,7 @@ help:
 # DEVELOPMENT
 # ==================================================================================== #
 
-## run: run main application
+## run: run application
 .PHONY: run
 run:
 	go run ./src --displayflags 
@@ -49,7 +49,7 @@ vendor:
 	go mod vendor
 
 
-## cover: roda os testes com cover 
+## cover:  run tests, generate code coverage file and open browse
 .PHONY: cover
 cover:
 	go test -coverprofile=coverage.out ./...
