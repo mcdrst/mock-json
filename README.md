@@ -3,7 +3,7 @@
 
 Restfull api for json files - Inspired by [server-json](https://github.com/typicode/json-server.git)
 
-## Install 
+## Install
 
 Download repository
 
